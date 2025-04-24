@@ -10,23 +10,26 @@ set(MX_Defines_Syms
 # STM32CubeMX generated include paths
 set(MX_Include_Dirs
     ${CMAKE_SOURCE_DIR}/Inc
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Inc
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Inc/Legacy
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Loader/core
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Loader/MDK-ARM
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Loader/STM32Cube
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager/sal
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager/psram
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager/sdcard
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager/user
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/CMSIS/Device/ST/STM32H7RSxx/Include
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/CMSIS/Include
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Inc
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Inc/Legacy
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Loader/core
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Loader/MDK-ARM
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Loader/STM32Cube
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager/sal
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager/psram
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager/sdcard
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager/user
+    ${CMAKE_SOURCE_DIR}/../Drivers/CMSIS/Device/ST/STM32H7RSxx/Include
+    ${CMAKE_SOURCE_DIR}/../Drivers/CMSIS/Include
 )
 # STM32CubeMX generated application sources
 set(MX_Application_Src
+    ${CMAKE_SOURCE_DIR}/Src/gpio.c
     ${CMAKE_SOURCE_DIR}/Src/extmem_manager.c
+    ${CMAKE_SOURCE_DIR}/Src/sbs.c
+    ${CMAKE_SOURCE_DIR}/Src/xspi.c
     ${CMAKE_SOURCE_DIR}/Src/stm32h7rsxx_hal_msp.c
     ${CMAKE_SOURCE_DIR}/Src/extmemloader_init.c
 )
@@ -34,40 +37,40 @@ set(MX_Application_Src
 # STM32 HAL/LL Drivers
 set(STM32_Drivers_Src
     ${CMAKE_SOURCE_DIR}/Src/system_stm32h7rsxx.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_dma.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_dma_ex.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_rcc.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_rcc_ex.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_flash.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_flash_ex.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_gpio.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_pwr.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_pwr_ex.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_cortex.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_exti.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_xspi.c
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_dma.c
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_dma_ex.c
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_rcc.c
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_rcc_ex.c
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_flash.c
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_flash_ex.c
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_gpio.c
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_pwr.c
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_pwr_ex.c
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_cortex.c
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal.c
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_exti.c
+    ${CMAKE_SOURCE_DIR}/../Drivers/STM32H7RSxx_HAL_Driver/Src/stm32h7rsxx_hal_xspi.c
 )
 
 # Drivers Midllewares
 
 set(STM32_ExtMem_Loader_Src
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Loader/core/memory_wrapper.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Loader/core/systick_management.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Loader/MDK-ARM/FlashDev.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Loader/MDK-ARM/FlashPrg.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Loader/STM32Cube/stm32_device_info.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Loader/STM32Cube/stm32_loader_api.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Loader/core/memory_wrapper.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Loader/core/systick_management.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Loader/MDK-ARM/FlashDev.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Loader/MDK-ARM/FlashPrg.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Loader/STM32Cube/stm32_device_info.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Loader/STM32Cube/stm32_loader_api.c
 )
 set(STM32_ExtMem_Manager_Src
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager/stm32_extmem.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_sd.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_data.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_driver.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager/psram/stm32_psram_driver.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager/sdcard/stm32_sdcard_driver.c
-    C:/Users/10751/STM32Cube/Repository/STM32Cube_FW_H7RS_V1.2.0/Middlewares/ST/STM32_ExtMem_Manager/user/stm32_user_driver.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager/stm32_extmem.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_xspi.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager/sal/stm32_sal_sd.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_data.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp/stm32_sfdp_driver.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager/psram/stm32_psram_driver.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager/sdcard/stm32_sdcard_driver.c
+    ${CMAKE_SOURCE_DIR}/../Middlewares/ST/STM32_ExtMem_Manager/user/stm32_user_driver.c
 )
 # Link directories setup
 set(MX_LINK_DIRS

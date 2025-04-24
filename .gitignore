@@ -65,3 +65,5 @@ _deps
 CMakeUserPresets.json
 build.ninja
 bootloader/build/*
+bootloader/Boot/build/*
+bootloader/ExtMemLoader/build/*

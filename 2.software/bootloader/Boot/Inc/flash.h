@@ -1,9 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    memorymap.h
+  * @file    flash.h
   * @brief   This file contains all the function prototypes for
-  *          the memorymap.c file
+  *          the flash.c file
   ******************************************************************************
   * @attention
   *
@@ -18,8 +18,8 @@
   */
 /* USER CODE END Header */
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __MEMORYMAP_H__
-#define __MEMORYMAP_H__
+#ifndef __Flash_H__
+#define __Flash_H__
 
 #ifdef __cplusplus
 extern "C" {
@@ -36,16 +36,15 @@ extern "C" {
 
 /* USER CODE END Private defines */
 
+void MX_FLASH_Init(void);
+
 /* USER CODE BEGIN Prototypes */
-int32_t EXTMEM_Flash_Probe(void);
-int32_t EXTMEM_Flash_EnterXIP(void);
-int32_t EXTMEM_PSRAM_Probe(void);
-int32_t EXTMEM_PSRAM_EnterXIP(void);
+
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* __MEMORYMAP_H__ */
+#endif /* __Flash_H__ */
 

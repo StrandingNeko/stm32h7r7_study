@@ -5,7 +5,7 @@
 
   <Header>### uVision Project, (C) Keil Software</Header>
 
-  <WorkspaceName>E:\2.Git\github\stm32h7r7_study\2.software\mdk\MDK-ARM\Project.uvmpw</WorkspaceName>
+  <WorkspaceName>E:\2.Git\github\stm32h7r7_study\2.software\bootloader\MDK-ARM\Project.uvmpw</WorkspaceName>
 
   <project>
     <PathAndName>.\Boot\bootloader_Boot.uvprojx</PathAndName>

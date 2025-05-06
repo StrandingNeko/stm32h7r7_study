@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32H7S7xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../../Boot/Inc;../../Drivers/STM32H7RSxx_HAL_Driver/Inc;../../Drivers/STM32H7RSxx_HAL_Driver/Inc/Legacy;../../Middlewares/ST/STM32_ExtMem_Manager;../../Middlewares/ST/STM32_ExtMem_Manager/boot;../../Middlewares/ST/STM32_ExtMem_Manager/sal;../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp;../../Middlewares/ST/STM32_ExtMem_Manager/psram;../../Middlewares/ST/STM32_ExtMem_Manager/sdcard;../../Middlewares/ST/STM32_ExtMem_Manager/user;../../Drivers/CMSIS/Device/ST/STM32H7RSxx/Include;../../Drivers/CMSIS/Include;../../third_party/aps256xx;../../third_party/w35t51nwtbie</IncludePath>
+              <IncludePath>../../Boot/Inc;../../Drivers/STM32H7RSxx_HAL_Driver/Inc;../../Drivers/STM32H7RSxx_HAL_Driver/Inc/Legacy;../../Middlewares/ST/STM32_ExtMem_Manager;../../Middlewares/ST/STM32_ExtMem_Manager/boot;../../Middlewares/ST/STM32_ExtMem_Manager/sal;../../Middlewares/ST/STM32_ExtMem_Manager/nor_sfdp;../../Middlewares/ST/STM32_ExtMem_Manager/psram;../../Middlewares/ST/STM32_ExtMem_Manager/sdcard;../../Middlewares/ST/STM32_ExtMem_Manager/user;../../Drivers/CMSIS/Device/ST/STM32H7RSxx/Include;../../Drivers/CMSIS/Include;../../third_party/aps256xx;../../third_party/w35t51nwtbie;..\..\third_party\EasyLogger\easylogger\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -509,16 +509,6 @@
               <FileName>system_stm32h7rsxx.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../Boot/Src/system_stm32h7rsxx.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Third-Party/aps256xx</GroupName>
-          <Files>
-            <File>
-              <FileName>aps256xx.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\third_party\aps256xx\aps256xx.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1601,6 +1591,16 @@
                   </Cads>
                 </FileArmAds>
               </FileOption>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Third-Party/aps256xx</GroupName>
+          <Files>
+            <File>
+              <FileName>aps256xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\third_party\aps256xx\aps256xx.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -19,6 +19,7 @@ MAP_FILES :=
 S_DEPS := 
 S_UPPER_DEPS := 
 C_DEPS := 
+OBJCOPY_BIN := 
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
@@ -27,4 +28,8 @@ Core/Src \
 Core/Startup \
 Drivers/STM32H7RSxx_HAL_Driver \
 Middlewares/ThreadX/RTOS/ThreadX/Core \
+Third-Party/CherryRB \
+Third-Party/CherrySH/builtin \
+Third-Party/CherrySH/cherryrl \
+Third-Party/CherrySH \
 

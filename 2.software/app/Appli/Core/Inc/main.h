@@ -65,7 +65,11 @@ void Error_Handler(void);
 #define LED_BLUE_GPIO_Port GPIOO
 
 /* USER CODE BEGIN Private defines */
+#define LED_RED_ON()	HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, 1)
+#define LED_RED_OFF()	HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, 0)
 
+#define LED_BLUE_ON()	HAL_GPIO_WritePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin, 0)
+#define LED_BLUE_OFF()	HAL_GPIO_WritePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin, 1)
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

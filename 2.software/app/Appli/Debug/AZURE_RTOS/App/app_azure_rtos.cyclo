@@ -1,2 +1,1 @@
-../AZURE_RTOS/App/app_azure_rtos.c:72:13:led_thread_entry	1
-../AZURE_RTOS/App/app_azure_rtos.c:89:6:tx_application_define	3
+../AZURE_RTOS/App/app_azure_rtos.c:72:6:tx_application_define	3

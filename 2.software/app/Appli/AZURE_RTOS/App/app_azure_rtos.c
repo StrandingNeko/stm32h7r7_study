@@ -61,24 +61,7 @@ static TX_BYTE_POOL tx_app_byte_pool;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN PFP */
-#define LED_THREAD_NAME			"tled"
-#define LED_THREAD_BUF_SIZE		512
-#define LED_THREAD_PRIORITY		10
-#define LED_THREAD_TIME_SLICE	TX_NO_TIME_SLICE
 
-static TX_THREAD led_thread = {0};
-static uint8_t led_thread_buf[LED_THREAD_BUF_SIZE] = {0};
-
-static VOID led_thread_entry(ULONG param)
-{
-	while(1)
-	{
-		LED_RED_ON();
-		tx_thread_sleep(1000);
-		LED_BLUE_OFF();
-		tx_thread_sleep(1000);
-	}
-}
 /* USER CODE END PFP */
 
 /**
@@ -119,16 +102,7 @@ VOID tx_application_define(VOID *first_unused_memory)
     }
 
     /* USER CODE BEGIN  App_ThreadX_Init_Success */
-    tx_thread_create(&led_thread,
-    		LED_THREAD_NAME,
-			led_thread_entry,
-			0,
-			led_thread_buf,
-			LED_THREAD_BUF_SIZE,
-			LED_THREAD_PRIORITY,
-			LED_THREAD_PRIORITY,
-			LED_THREAD_TIME_SLICE,
-			TX_AUTO_START);
+
     /* USER CODE END  App_ThreadX_Init_Success */
 
   }

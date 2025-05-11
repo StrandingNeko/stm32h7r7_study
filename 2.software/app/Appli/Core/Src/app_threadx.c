@@ -60,11 +60,11 @@ UINT App_ThreadX_Init(VOID *memory_ptr)
 {
   UINT ret = TX_SUCCESS;
   /* USER CODE BEGIN App_ThreadX_MEM_POOL */
-
+  LED_BLUE_OFF();
   /* USER CODE END App_ThreadX_MEM_POOL */
 
   /* USER CODE BEGIN App_ThreadX_Init */
-
+  shell_init(&huart4, 0);
   /* USER CODE END App_ThreadX_Init */
 
   return ret;

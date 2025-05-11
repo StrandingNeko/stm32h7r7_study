@@ -82,6 +82,16 @@ SECTIONS
     KEEP (*(.fini))
 
     . = ALIGN(4);
+    
+    __fsymtab_start = .;
+    KEEP(*(FSymTab))
+    __fsymtab_end = .;
+    . = ALIGN(4);
+    __vsymtab_start = .;
+    KEEP(*(VSymTab))
+    __vsymtab_end = .;
+    . = ALIGN(4);
+    
     _etext = .;        /* define a global symbols at end of code */
   } >FLASH
 
@@ -201,7 +211,7 @@ SECTIONS
   } >ITCM
 
  /*  Unitialized RW_EXTRAM section into "RW_EXTRAM" RW_EXTRAM type memory [MMT section] */
- .RW_EXTRAM_Section :
+ .RW_EXTRAM_Section(NOLOAD) :
   {
     . = ALIGN(4);
     KEEP (*(.RW_EXTRAM_Section))

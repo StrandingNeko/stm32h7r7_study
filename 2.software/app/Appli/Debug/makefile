@@ -9,6 +9,10 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include Third-Party/CherrySH/cherryrl/subdir.mk
+-include Third-Party/CherrySH/builtin/subdir.mk
+-include Third-Party/CherrySH/subdir.mk
+-include Third-Party/CherryRB/subdir.mk
 -include Middlewares/ThreadX/RTOS/ThreadX/Core/subdir.mk
 -include Drivers/STM32H7RSxx_HAL_Driver/subdir.mk
 -include Core/Startup/subdir.mk
@@ -54,6 +58,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 app_Appli.list \
 
+OBJCOPY_BIN += \
+app_Appli.bin \
+
 
 # All Target
 all: main-build
@@ -77,12 +84,17 @@ app_Appli.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
+app_Appli.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "app_Appli.bin"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) app_Appli.elf app_Appli.list app_Appli.map default.size.stdout
+	-$(RM) app_Appli.bin app_Appli.elf app_Appli.list app_Appli.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

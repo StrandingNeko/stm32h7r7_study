@@ -1,0 +1,13 @@
+../Core/Src/app_shell.c:34:6:shell_uart_isr_cb	1
+../Core/Src/app_shell.c:43:6:HAL_UARTEx_RxEventCallback	3
+../Core/Src/app_shell.c:51:17:csh_sput_cb	1
+../Core/Src/app_shell.c:60:17:csh_sget_cb	1
+../Core/Src/app_shell.c:66:13:wait_char	4
+../Core/Src/app_shell.c:86:13:thread_repl	8
+../Core/Src/app_shell.c:138:13:thread_exec	1
+../Core/Src/app_shell.c:152:5:chry_shell_port_create_context	5
+../Core/Src/app_shell.c:187:6:chry_shell_port_default_handler	10
+../Core/Src/app_shell.c:239:5:shell_init	5
+../Core/Src/app_shell.c:335:6:shell_lock	1
+../Core/Src/app_shell.c:343:6:shell_unlock	1
+../Core/Src/app_shell.c:351:12:csh_exit	1

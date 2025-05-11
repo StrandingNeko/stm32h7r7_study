@@ -20,6 +20,7 @@
 #include "app_threadx.h"
 #include "main.h"
 #include "flash.h"
+#include "gpdma.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -100,6 +101,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_GPDMA1_Init();
   MX_UART4_Init();
   MX_FLASH_Init();
   /* USER CODE BEGIN 2 */

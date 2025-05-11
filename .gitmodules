@@ -1,0 +1,6 @@
+[submodule "2.software/app/Appli/Third-Party/CherryRB"]
+	path = 2.software/app/Appli/Third-Party/CherryRB
+	url = https://github.com/cherry-embedded/CherryRB.git
+[submodule "2.software/app/Appli/Third-Party/CherrySH"]
+	path = 2.software/app/Appli/Third-Party/CherrySH
+	url = https://github.com/cherry-embedded/CherrySH.git

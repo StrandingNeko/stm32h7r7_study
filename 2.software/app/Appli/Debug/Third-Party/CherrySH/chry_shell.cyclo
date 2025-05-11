@@ -1,0 +1,16 @@
+../Third-Party/CherrySH/chry_shell.c:143:12:chry_shell_port_hash_strcmp	1
+../Third-Party/CherrySH/chry_shell.c:162:16:chry_shell_completion_callback	33
+../Third-Party/CherrySH/chry_shell.c:291:12:chry_shell_user_callback	11
+../Third-Party/CherrySH/chry_shell.c:373:5:chry_shell_init	8
+../Third-Party/CherrySH/chry_shell.c:488:13:chry_shell_task_exec_internal	2
+../Third-Party/CherrySH/chry_shell.c:511:6:chry_shell_task_exec	1
+../Third-Party/CherrySH/chry_shell.c:527:5:chry_shell_task_repl	31
+../Third-Party/CherrySH/chry_shell.c:728:5:chry_shell_parse	13
+../Third-Party/CherrySH/chry_shell.c:787:5:chry_shell_path_resolve	22
+../Third-Party/CherrySH/chry_shell.c:874:5:chry_shell_set_host	2
+../Third-Party/CherrySH/chry_shell.c:898:5:chry_shell_set_user	5
+../Third-Party/CherrySH/chry_shell.c:932:5:chry_shell_set_path	2
+../Third-Party/CherrySH/chry_shell.c:963:6:chry_shell_get_path	2
+../Third-Party/CherrySH/chry_shell.c:985:5:chry_shell_substitute_user	4
+../Third-Party/CherrySH/chry_shell.c:1013:7:chry_shell_getenv	3
+../Third-Party/CherrySH/chry_shell.c:1036:5:csh_printf	3

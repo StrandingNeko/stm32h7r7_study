@@ -265,15 +265,6 @@
 
 /*#define TX_SAFETY_CRITICAL*/
 
-/* Define ThreadX interrupt lockout and restore macros for protection on
-   access of critical kernel information.  The restore interrupt macro must
-   restore the interrupt posture of the running thread prior to the value
-   present prior to the disable macro.  In most cases, the save area macro
-   is used to define a local function save area for the disable and restore
-   macros.  */
-
-#define TX_DISABLE_INLINE
-
 /* USER CODE BEGIN 2 */
 
 /* Define the user extension field of the thread control block.*/

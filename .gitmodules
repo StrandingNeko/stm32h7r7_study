@@ -4,3 +4,6 @@
 [submodule "2.software/app/Appli/Third-Party/CherrySH"]
 	path = 2.software/app/Appli/Third-Party/CherrySH
 	url = https://github.com/cherry-embedded/CherrySH.git
+[submodule "2.software/app/Appli/Third-Party/CherryUSB"]
+	path = 2.software/app/Appli/Third-Party/CherryUSB
+	url = https://github.com/cherry-embedded/CherryUSB.git
